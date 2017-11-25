@@ -58,3 +58,24 @@ a {
 ul, li {
 	list-style: none;
 }
+
+
+/******************
+   General Styles
+*******************/
+#navigation ul {
+	background-color: #2d2d2d;
+}
+
+#navigation ul li {
+	display: inline-block;
+	margin-right: 10px;
+	padding: 10px 0;
+}
+
+#navigation ul li a {
+	font-size: 13px;
+	color: #ccc;
+	font-weight: 200;
+	font-family: Arial, sans-serif;
+}
