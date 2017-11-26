@@ -22,6 +22,7 @@ time, mark, audio, video {
 
 body {
     line-height:1;
+    font-family: Arial, sans-serif;
 }
 
 article,aside,details,figcaption,figure,
@@ -60,7 +61,29 @@ ul, li {
 }
 
 
-/******************
-   General Styles
-*******************/
+/*
+	Header - Nav
+ */
 
+.header	{
+	position: relative;
+}
+
+.main-nav {
+	position: absolute;
+	right: 20px;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.main-nav li a {
+	font-size: 13px;
+	color: black;
+}
+
+.main-nav li img {
+	margin-top: 5px;
+}
