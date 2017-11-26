@@ -65,25 +65,29 @@ ul, li {
 	Header - Nav
  */
 
-.header	{
-	position: relative;
+.main-nav {
+	margin-top: 20px;
+	margin-right: 10px;
 }
 
-.main-nav {
-	position: absolute;
-	right: 20px;
+.main-nav::after {
+	display: block;
+	content: "";
+	clear: both;
 }
 
 .main-nav li {
-	display: inline-block;
-	margin-right: 10px;
+	float: right;
+	margin-right: 15px;
 }
 
 .main-nav li a {
 	font-size: 13px;
-	color: black;
+	color: #000;
 }
 
-.main-nav li img {
-	margin-top: 5px;
-}
+/*
+	Main Area
+ */
+
+
