@@ -1,4 +1,10 @@
 /********** CSS Reset **********/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -89,5 +95,45 @@ ul, li {
 /*
 	Main Area
  */
+.main {
+	text-align: center;
+	margin-top: 150px;
+}
+
+.main .image {
+	margin-bottom: 20px;
+}
+
+.main .user-search input {
+	margin: 0 400px 0 390px;
+	display: block;
+	width: 580px;
+	height: 45px;
+	border: none;
+
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+button[type=submit] {
+	margin-top: 30px;
+	padding: 10px 20px;
+	background: #F2F2F2;
+	border: none;
+	color: #737373;
+	font-weight: bold;
+	border-radius: 2px;
+	border: 1px solid rgba(0, 0, 0, 0);
+}
+
+button[type=submit]:hover {
+	background: linear-gradient(#fafafa, #f2f2f2);
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	box-shadow: 0 1px 0.5px 0 rgba(0, 0, 0, 0.25);
+	color: #000;
+}
+
+.main .user-search .btn-search {
+	margin-right: 3px;
+}
 
 
