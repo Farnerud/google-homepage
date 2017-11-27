@@ -26,6 +26,8 @@ time, mark, audio, video {
     background:transparent;
 }
 
+textarea, input, button {outline:none;}
+
 body {
     line-height:1;
     font-family: Arial, sans-serif;
@@ -87,9 +89,17 @@ ul, li {
 	margin-right: 15px;
 }
 
+.main-nav li img {
+	cursor: pointer;
+}
+
 .main-nav li a {
 	font-size: 13px;
 	color: #000;
+}
+
+.main-nav li a:hover {
+	text-decoration: underline;
 }
 
 /*
@@ -98,6 +108,7 @@ ul, li {
 .main {
 	text-align: center;
 	margin-top: 150px;
+	margin-bottom: 145px;
 }
 
 .main .image {
@@ -106,12 +117,19 @@ ul, li {
 
 .main .user-search input {
 	margin: 0 400px 0 390px;
+	padding: 0 20px;
 	display: block;
 	width: 580px;
 	height: 45px;
 	border: none;
+	font-size: 16px;
 
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	transition: box-shadow .2s ease;
+}
+
+.main .user-search input:hover {
+	box-shadow: -1px 4px 5px 1px rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
 }
 
 button[type=submit] {
@@ -135,5 +153,59 @@ button[type=submit]:hover {
 .main .user-search .btn-search {
 	margin-right: 3px;
 }
+
+/*
+	Footer
+ */
+footer {
+	margin-top: 50px;
+	background-color: #F2F2F2;
+	color: #757575;
+}
+
+footer .country {
+	padding: 15px 0 15px 20px;
+	border-top: 1px solid #E2E2E2;
+	border-bottom: 1px solid #E2E2E2;
+}
+
+.footer-nav::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.footer-nav {
+	font-size: 13px;
+	padding: 15px 0;
+}
+
+.footer-nav .about-1 {
+	float: left;
+	padding-left: 20px;
+}
+
+.footer-nav .about-2 {
+	float: right;
+	padding-right: 20px;
+}
+
+.footer-nav .about-1 li,
+.footer-nav .about-2 li {
+	display: inline;
+	margin-right: 25px;
+}
+
+.footer-nav a {
+	color: #757575;
+}
+
+.footer-nav a:hover {
+	text-decoration: underline;
+}
+
+
+
+
 
 
